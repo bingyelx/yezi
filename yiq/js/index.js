@@ -18,21 +18,28 @@ $(function(){
 			$(".bottom_nav").animate({"top":"-140px"},1000);
 		}
 	})
+	$(".pen").on("tap",function(){
+		open("xinzeng.html",name="_parent - URL");
+	})
 	//var atr=[]
 	var arr=sessionStorage.getItem("txt");
-	var str=arr.split(",")
-	console.log(str);
-	for(var t=0;t<str.length;t++){
+	if(arr){
+		var str=arr.split(",");
+		for(var t=0;t<str.length-1;t++){
 		var s;
 		if(t==0){
-			s="<li><span></span><span>"+str[t]+"</span></li>";
+				s="<li><span></span><span>"+str[t]+"</span></li>";
+			}
+			else{
+				s+="<li><span></span><span>"+str[t]+"</span></li>";
+			}
+			
+			$(".box").html(s);
 		}
-		else{
-			s+="<li><span></span><span>"+str[t]+"</span></li>";
-		}
-		
-		$(".box").html(s);
 	}
+	
+	//console.log(str);
+	
 	$(".box").find("li").on("tap",function(){
 		var t=$(this).index;
 		var r=$(this).html();
@@ -41,7 +48,5 @@ $(function(){
 		open("xqye.html",name="_parenr - URL")
 	})
 	//console.log(arr);
-	$(".pen").on("tap",function(){
-		open("xinzeng.html",name="_parent - URL");
-	})
+	
 })

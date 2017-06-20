@@ -9,6 +9,9 @@ $(function(){
 			$(".xl").animate({"top":"-300px"},1000);
 		}
 	})
+	$(".top_1").find("img:first").on("tap",function(){
+		open("index.html",name="_parenr - URL")
+	})
 	var st=sessionStorage.getItem("pt");
 	var r="<li>"+st+"</li>"
 	$(".nav").html(r);
@@ -25,7 +28,5 @@ $(function(){
 		sessionStorage.setItem("txt",str);
 	})
 	
-	$(".top_1").find("img:first").on("tap",function(){
-		open("index.html",name="_parenr - URL")
-	})
+	
 })

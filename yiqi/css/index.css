@@ -1,0 +1,31 @@
+.top { width: 100%; height: 50px; display: flex; color: #fff; position: relative; background: #96A2B8; justify-content: space-around; z-index: 99; }
+.top .left { width: 140px; height: 50px; padding-top: 10px; padding-left: 8px; text-align: center; line-height: 50px; }
+.top .left img { position: absolute; left: 15px; width: 26px; height: 26px; }
+.top .left span { position: absolute; top: 0; left: 50px; }
+.top div:nth-child(2) { text-align: center; line-height: 50px; width: 100%; height: 50px; }
+.top .right { width: 140px; height: 50px; padding-top: 14px; }
+.top .right img { width: 26px; height: 26px; }
+
+div .bottom_nav { position: absolute; right: 10px; top: -140px; transform: all 1s; z-index: 1; }
+div .bottom_nav li { width: 80px; height: 30px; color: #FFFFFF; text-align: center; line-height: 30px; background: #96A2B8; }
+
+.nav { width: 100%; height: 100%; margin-top: -50px; position: relative; background: rgba(127, 127, 127, 0.5); display: none; z-index: 2; }
+.nav .cel { width: 140px; height: 100%; background: #99A4B8; position: absolute; left: -140px; transform: all 1s; }
+.nav .cel h3 { font-weight: 200px; width: 140px; height: 50px; text-align: center; line-height: 50px; font-size: 24px; color: #fff; }
+.nav .cel .top_1 li { width: 140px; height: 30px; text-align: center; line-height: 30px; color: #fff; }
+.nav .cel .bottom { position: absolute; bottom: 10px; }
+.nav .cel .bottom li { width: 140px; height: 30px; text-align: center; line-height: 30px; color: #fff; }
+
+section { width: 100%; padding: 0 0 20px 0; background: #FAFAFA; }
+section .pen { width: 80px; height: 80px; background: #94A0B6; border-radius: 50%; position: fixed; right: 10px; bottom: 30px; }
+section .pen img { width: 40px; height: 40px; position: absolute; top: 20px; left: 20px; transform: rotate(30deg); }
+section .box { padding: 10px 0 0; }
+section .box li { height: 50px; width: 80%; background: #FFFFFF; border-radius: 5px; margin: 10px auto; overflow: hidden; position: relative; }
+section .box li span:nth-child(2) { display: inline-block; position: absolute; top: 0; left: 10px; line-height: 50px; }
+section .box li span:nth-child(1) { display: inline-block; width: 3px; height: 50px; background: #f7f; }
+section .box li:nth-child(4n+1) span:nth-child(1) { background: #F1DE98; }
+section .box li:nth-child(4n+2) span:nth-child(1) { background: #E6AAB9; }
+section .box li:nth-child(4n+3) span:nth-child(1) { background: #94A0B8; }
+section .box li:nth-child(4n+4) span:nth-child(1) { background: #3E96C4; }
+
+/*# sourceMappingURL=index.css.map */
