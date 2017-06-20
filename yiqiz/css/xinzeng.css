@@ -1,0 +1,11 @@
+.top .top_1 { width: 100%; height: 50px; padding: 10px; position: relative; background: #96A2B8; z-index: 99; }
+.top .top_1 span { color: #fff; position: absolute; left: 40px; line-height: 30px; }
+.top .top_1 img { width: 30px; height: 30px; position: absolute; }
+.top .top_1 img:nth-child(1) { transform: rotate(180deg); }
+.top .top_1 img:nth-child(3) { right: 80px; }
+.top .top_1 img:nth-child(4) { right: 45px; }
+.top .top_1 img:nth-child(5) { right: 10px; }
+.top .xl { width: 70px; background: #96A2B8; position: absolute; top: -300px; right: 10px; transform: all 1s; z-index: -2; }
+.top .xl ul li { height: 40px; font-size: 14px; color: #fff; text-align: center; line-height: 40px; border-bottom: 1px #fff solid; }
+
+/*# sourceMappingURL=xinzeng.css.map */
