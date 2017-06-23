@@ -37,7 +37,7 @@ $(function(){
 			else{
 				sessionStorage.setItem("txt",JSON.stringify(str));
 			}
-			
+			open("index.html",name="_parent - URL")
 			
 //			location.href="index.html?txt="+str;
 //			location.search.slice(1).split("=")[1];
@@ -47,7 +47,7 @@ $(function(){
 				alert("请输入内容");
 			}
 			
-			open("index.html",name="_parent - URL")
+			
 			
 			
 			//console.log(str instanceof Array);
