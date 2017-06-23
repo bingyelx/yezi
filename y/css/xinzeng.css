@@ -1,0 +1,21 @@
+.top .top_1 { width: 100%; height: 50px; padding: 10px; position: fixed; background: #96A2B8; z-index: 99; }
+.top .top_1 span { color: #fff; position: absolute; left: 40px; line-height: 30px; }
+.top .top_1 img { width: 30px; height: 30px; position: absolute; }
+.top .top_1 img:nth-child(1) { transform: rotate(180deg); }
+.top .top_1 img:nth-child(3) { right: 80px; }
+.top .top_1 img:nth-child(4) { right: 45px; }
+.top .top_1 img:nth-child(5) { right: 10px; }
+.top .xl { width: 70px; background: #96A2B8; position: absolute; top: -300px; right: 10px; transform: all 1s; }
+.top .xl ul li { height: 40px; font-size: 14px; color: #fff; text-align: center; line-height: 40px; border-bottom: 1px #fff solid; }
+
+section { padding-top: 50px; width: 100%; height: 100%; }
+section .txt { width: 100%; height: 100%; border: none; outline: none; resize: none; font-size: 24px; }
+
+footer { width: 100%; height: 50px; position: fixed; bottom: -50px; transform: all 1s; }
+footer div ul li { display: block; float: left; width: 20px; height: 20px; background: #3E96C4; margin: 10px 30px; border: 2px solid #6ff; }
+footer div ul li:nth-child(1) { background: red; }
+footer div ul li:nth-child(2) { background: blue; }
+footer div ul li:nth-child(3) { background: black; }
+footer div ul li:nth-child(4) { background: purple; }
+
+/*# sourceMappingURL=xinzeng.css.map */

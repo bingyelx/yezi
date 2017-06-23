@@ -1,0 +1,17 @@
+.top .top_1 { width: 100%; height: 50px; padding: 10px; position: relative; background: #96A2B8; z-index: 99; }
+.top .top_1 span { color: #fff; position: absolute; left: 40px; line-height: 30px; }
+.top .top_1 img { width: 30px; height: 30px; position: absolute; }
+.top .top_1 img:nth-child(1) { transform: rotate(180deg); }
+.top .top_1 img:nth-child(3) { right: 80px; }
+.top .top_1 img:nth-child(4) { right: 45px; }
+.top .top_1 img:nth-child(5) { right: 10px; }
+.top .xl { width: 70px; background: #96A2B8; position: absolute; right: 10px; top: -300px; transform: all 1s; z-index: 4; }
+.top .xl ul li { height: 40px; font-size: 14px; color: #fff; text-align: center; line-height: 40px; border-bottom: 1px #fff solid; }
+
+.nav { height: 100%; position: relative; }
+.nav img { width: 30px; height: 40px; position: absolute; top: 10px; right: 70px; }
+.nav .nav_1 { width: 80%; height: 300px; position: absolute; top: 50px; left: 30px; border: 1px solid #ccc; box-shadow: -20px 10px 10px #ccc; transform: rotate(-10deg); }
+.nav .nav_1 li { padding: 10px 20px; }
+.nav .nav_1 li span { padding: none; display: block; position: absolute; bottom: 0; width: 100%; height: 30px; text-align: center; line-height: 30px; color: #99A4B8; }
+
+/*# sourceMappingURL=xqye.css.map */

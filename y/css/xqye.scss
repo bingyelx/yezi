@@ -1,0 +1,95 @@
+.top {
+    .top_1{
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        position: relative;
+        background: #96A2B8;
+        z-index: 99;
+        span{
+            color: #fff;
+            position: absolute;
+            left: 40px;
+            line-height: 30px;
+        }
+        img {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            &:nth-child(1) {
+                transform: rotate(180deg);
+            }
+            &:nth-child(3) {
+                right: 80px;
+            }
+            &:nth-child(4) {
+                right: 45px;
+            }
+            &:nth-child(5) {
+                right: 10px;
+            }
+        }
+    }
+   
+    .xl {
+        width: 70px;
+        background: #96A2B8;
+        position: absolute;
+        right: 10px;
+        top: -300px;
+        transform: all 1s;
+        z-index: 4;
+       // display: none;
+        ul {
+            li {
+                height: 40px;
+                font-size: 14px;
+                color: #fff;
+                text-align: center;
+                line-height: 40px;
+                border-bottom: 1px #fff solid;
+            }
+        }
+    }
+}
+
+.nav{
+  //  margin-top: 50px;
+    height: 100%;
+    position: relative;
+    img{
+        width:30px;
+        height: 40px;
+        position: absolute;
+        top: 10px;
+        right: 70px;
+        //z-index: 9;
+    }
+    .nav_1{
+        width: 80%;
+        height: 300px;
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        border: 1px solid #ccc;
+        box-shadow: -20px 10px 10px #ccc;
+        transform: rotate(-10deg);
+        li{
+            padding:10px 20px;
+           
+             span{
+            padding: none;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: #99A4B8;
+        }
+        }
+       
+        //background: url(../img/1.bmp)no-repeat 200px 10px;
+    }
+}
