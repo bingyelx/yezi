@@ -1,0 +1,111 @@
+.top {
+    .top_1{
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        position: fixed;
+        background: #96A2B8;
+        z-index: 99;
+        span{
+            color: #fff;
+            position: absolute;
+            left: 40px;
+            line-height: 30px;
+        }
+        img {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            &:nth-child(1) {
+                transform: rotate(180deg);
+            }
+            &:nth-child(3) {
+                right: 80px;
+            }
+            &:nth-child(4) {
+                right: 45px;
+            }
+            &:nth-child(5) {
+                right: 10px;
+            }
+        }
+    }
+   
+    .xl {
+        width: 70px;
+        background: #96A2B8;
+        position: absolute;
+        top:-300px;
+        right: 10px;
+        transform: all 1s;
+        
+       // display: none;
+        ul {
+            li {
+                height: 40px;
+                font-size: 14px;
+                color: #fff;
+                text-align: center;
+                line-height: 40px;
+                border-bottom: 1px #fff solid;
+            }
+        }
+    }
+}
+section{
+    padding-top: 50px;
+   // padding-bottom: 50px;
+    width: 100%;
+    height: 100%;
+    .txt{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 24px;
+}
+}
+footer{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: -50px;
+    transform: all 1s;
+    div{
+        ul{
+            li{
+                display: block;
+                float: left;
+                //width: 25%;
+                width: 20px;
+                height: 20px;
+                background: #3E96C4;
+                margin: 10px 30px;
+                border: 2px solid #6ff;
+                //line-height: 50px;
+              //text-align: center;
+//              span{
+//                  display: block;
+//                  background: #000000;
+//                 
+//              }
+                &:nth-child(1){
+                    background: red;
+                }
+                 &:nth-child(2){
+                    background: blue;
+                }
+                 &:nth-child(3){
+                    background: black;
+                }
+                 &:nth-child(4){
+                    background: purple;
+                }
+                
+                
+            }
+        }
+    }
+}
+
