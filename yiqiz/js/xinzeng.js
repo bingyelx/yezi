@@ -25,10 +25,10 @@ $(function(){
 			var d=new Date();
 			d=d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate()+","+d.getHours()+":"+d.getMinutes();
 			console.log(d);
-			var str=[{txt:arr,time:d}];
 			
-			//console.log(str instanceof Array);
-			$(".txt").val("");
+			if(!$(".txt").val()==""){
+				var str=[{txt:arr,time:d}];
+				$(".txt").val("");
 			if(sessionStorage.getItem("txt")){
 				var st=JSON.parse(sessionStorage.getItem("txt"));
 				st.unshift({txt:arr,time:d});
@@ -38,10 +38,20 @@ $(function(){
 				sessionStorage.setItem("txt",JSON.stringify(str));
 			}
 			
-			console.log(sessionStorage.getItem("txt"))
+			
 //			location.href="index.html?txt="+str;
 //			location.search.slice(1).split("=")[1];
 //			console.log(str)
+			}
+			else{
+				alert("请输入内容");
+			}
+			
+			open("index.html",name="_parent - URL")
+			
+			
+			//console.log(str instanceof Array);
+			
 		})	
 		var pt=["red","blue","black","purple"]
 		$("footer").find("li").on("tap",function(){
