@@ -1,0 +1,16 @@
+* { margin: 0; padding: 0; }
+
+.show { float: left; }
+.show div { float: left; }
+.show div:nth-child(1) { width: 640px; height: 400px; background: url(../img/4.jpg); position: relative; }
+.show div:nth-child(1) .p h3 { position: absolute; left: 200px; top: 180px; color: #fff; }
+.show div:nth-child(2) { width: 640px; height: 400px; background: url(../img/14.jpg); position: relative; overflow: hidden; }
+.show div:nth-child(2):hover .pt span { bottom: 0px; opacity: 1; }
+.show div:nth-child(2):hover .pt p { opacity: 1; }
+.show div:nth-child(2) .pt { transition-delay: 2s; }
+.show div:nth-child(2) .pt p { display: block; width: 100%; height: 50px; text-align: center; line-height: 50px; margin: 175px 0 0; transition: all 1s ease; transform-origin: center bottom; transform: translate(-100px, 0); opacity: 0; }
+.show div:nth-child(2) .pt span { display: block; width: 100%; height: 50px; background: rgba(255, 255, 255, 0.9); position: absolute; left: 0; bottom: -50px; transition: all 1s ease; opacity: 0; }
+.show div:nth-child(3) { width: 640px; height: 400px; background: url(../img/10.jpg); }
+.show div:last-child { width: 640px; height: 400px; background: url(../img/8.jpg); }
+
+/*# sourceMappingURL=index.css.map */
