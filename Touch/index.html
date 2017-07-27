@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+		<title>触控时讯</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/homepage.css" />
+		<link rel="stylesheet" href="css/user.css"/>
+		<link rel="stylesheet" href="css/subscription.css" />
+		<link rel="stylesheet" href="css/circle.css" />
+		
+		<script type="text/javascript" src="js/angular.js" ></script>
+		<script type="text/javascript" src="js/angular-route.js" ></script>
+		<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		
+		<script type="text/javascript" src="js/rout.js" ></script>
+		
+		<script type="text/javascript" src="module/homepage.js" ></script>
+		<script type="text/javascript" src="module/circle.js" ></script>
+		<script type="text/javascript" src="module/subscription.js" ></script>
+		
+		<script>
+			document.getElementsByTagName("html")[0].style.fontSize = innerWidth / 16 + "px";
+		</script>
+		
+	</head>
+	<body>
+		<div class="container">
+			<section>
+				<ng-view></ng-view>
+			</section>
+			<footer ng-controller="main">
+				<ul id="footlist">
+					<li class="active">
+						<a href="#!homepage">
+							<p></p>
+							<span>时讯</span>	
+						</a>
+					</li>
+					<li>
+						<a href="#!circle">
+							<p></p>
+							<span>视频</span>	
+						</a>
+						
+					</li>
+					<li>
+						<a href="#!video">
+							<p></p>
+							<span>直播</span>	
+						</a>
+						
+					</li>
+					<li>
+						<a href="#!user">
+							<p></p>
+							<span>我的</span>	
+						</a>
+					</li>
+				</ul>
+			</footer>
+		</div>
+	</body>
+
+</html>
