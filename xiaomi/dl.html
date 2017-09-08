@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.box1{
+		width: 900px;
+		height: 150px;
+	}
+	.box2{
+		width: 1800px;
+		height: 150px;
+	}
+	img{
+		width: 300px;
+		height:150px;
+		float: left;
+	}
+	</style>
+</head>
+<body>
+		<div class="box1">
+			<div class="box2">
+				<div><img src="img/1.jpg" alt=""></div>
+				<div><img src="img/1.jpg" alt=""></div>
+				<div><img src="img/1.jpg" alt=""></div>
+				<div><img src="img/1.jpg" alt=""></div>
+				<div><img src="img/1.jpg" alt=""></div>
+				<div><img src="img/1.jpg" alt=""></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			// for(var i=0;i<=1000;i++){
+			// 	if(i%5==0 || i%6==0){
+			// 		console.log(i);
+			// 	}
+			// }
+			// 
+			var arr=[12,334,22,13,1,23,34];
+			function sort(arr){
+				for(var j=0;j<arr.length;j++){
+					for(var i=0;i<arr.length-j-1;i++)
+						if(arr[i]>arr[i+1]){
+							var t=arr[i];
+							arr[i]=arr[i+1];
+							arr[i+1]=t;
+						}
+				}
+			}
+			console.log("before"+"---->"+arr);
+			sort(arr);
+			console.log("after"+"----->"+arr);
+
+		</script>
+</body>
+</html>

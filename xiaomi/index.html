@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery-1.11.1.js" ></script>
+		<script>
+		window.onload=function(){
+			function $(id){
+				return document.querySelector(id);
+			}
+			var txt=$("#txt");
+			var pass=$("#pass");
+			var btn=$("#btn");
+			var zczh=$("#zczh");
+			var yzm=$("#yzm");
+			var yz=$("#yz");
+			var on=$(".on");
+			var off=$(".off");
+			var form=document.forms[0];
+			
+			var con=$('con')
+			var chars=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+			var Upp=[]
+			var num=[0,1,2,3,4,5,6,7,8,9]
+			function random(m){
+				return parseInt(Math.random()*m)
+			}
+			for(i=0;i<chars.length;i++){
+				Upp[i]=chars[i].toUpperCase()
+			}
+			chars=chars.concat(Upp).concat(num)
+			var arr="";
+			for(j=1,s="";j<=4;j++){
+				var n=random(62);
+				var color="rgb("+random(256)+","+random(256)+","+random(256)+")";
+				yzm.innerHTML+="<span style='color:"+color+"'>"+chars[n]+"</span>";
+				arr+=chars[n];
+			}
+
+				db=openDatabase("mydb","2.0","test a command",2*1024*1024);
+				
+				db.transaction(function(tx){
+					tx.executeSql("create table if not exists email (zh unique,pass integer)");
+				})
+			
+				zczh.onclick=function(){
+						 
+					db.transaction(function(tx){
+						tx.executeSql("insert into email (zh,pass) values(?,?)",[txt.value,pass.value],function(){
+							  alert("添加成功");
+						});
+					})
+				}
+				
+		    	
+			btn.onclick=function(){
+				
+		        db.transaction(function(tx){
+		    	 	
+		    	 	   tx.executeSql("select * from email where zh=? and pass=?",[txt.value,pass.value],function(tx,rs){
+		    	 	   	       if(rs.rows.length>0 && arr==yz.value){
+		    	 	   	       	
+		    	 	   	       	  alert("登陆成功");
+		    	 	   	       	  open("http://www.baidu.com");
+		    	 	   	       }
+		    	 	   	       else{
+		    	 	   	       	alert("登陆失败");
+		    	 	   	       }
+		    	 	   })
+		    	})
+		    	
+		    }
+
+			off.onclick=function(){
+				this.style.color="#FF6700";
+				on.style.color="#333";
+				zczh.style.display="block";
+				btn.style.display="none";
+				pass.value="";
+				txt.value="";
+			}
+			on.onclick=function(){
+				this.style.color="#FF6700";
+				off.style.color="#333";
+				btn.style.display="block";
+				zczh.style.display="none";
+				pass.value="";
+				txt.value="";
+			}
+			
+			txt.onkeyup=function(){
+				pass.value="";
+				yz.value="";
+			}
+		}
+			
+		</script>
+	</head>
+	<body>
+		<div class="all">
+			<div class="head">
+				<a class="on" href="#">账号登入</a>
+				<a href="#" class="off">账号注册</a>
+			</div>
+			<form>
+				<input class="zhangh" id="txt" type="text" placeholder="邮箱/手机号码/小米账号" required/>
+				<input class="pass" id="pass" type="password" placeholder="密码" required/>
+				<div class="info">
+					<input type="text" id="yz" required/> 
+					<div class="yzm" id="yzm"></div>
+				</div>
+				<button class="btn" type="submit" id="btn">立即登入</button>
+				<button class="btn" type="submit" id="zczh">注册</button>
+			</form>
+			
+			<div class="head zc">
+				<a href="#">注册小米账号</a>
+				<a href="#">忘记密码</a>
+			</div>
+			
+			
+		</div>
+	</body>
+</html>
